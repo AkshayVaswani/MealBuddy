@@ -3,4 +3,9 @@
     <string name="title_activity_tabbed">tabbed</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="emailAuthMain">We’ve sent a verification email to your Drexel account!  Please confirm you are a real Drexel student. </string>
+    <string name='emailAuthBut'>Continue</string>
+
+    <color name="tan">#CFB796</color>
+    <color name="gray">#555555</color>
 </resources>
