@@ -5,6 +5,10 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="emailAuthMain">We’ve sent a verification email to your Drexel account!  Please confirm you are a real Drexel student. </string>
     <string name="timeMain">Select your Time</string>
+    <string name="locationMain">Select your Location</string>
+
+    <string name="timeSelected">[N/A]</string>
+    <string name="locationSelected">[N/A]</string>
 
     <string name="timeBut7a">7:00am</string>
     <string name="timeBut7_15a">7:15am</string>
@@ -71,6 +75,11 @@
     <string name="timeBut10_30">10:30pm</string>
     <string name="timeBut10_45">10:45pm</string>
 
+    <string name="locButHans">The Hans</string>
+    <string name="locButUrban">Urban Eatery</string>
+    <string name="locButNorthside">Northside Dining</string>
+    <string name="locButComingSoon">Coming Soon...</string>
+    <string name="timeChosen1">Time Chosen: </string>
 
     <string name='emailAuthBut'>Continue</string>
 

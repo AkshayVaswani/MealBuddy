@@ -4,6 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainPage.findAMealBuddy.location">
+    tools:context=".mainPage.findAMealBuddy.location"
+    android:background="@color/tan">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#F1ECE8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.00" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="380dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="77dp" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/timeChosen1"
+        android:layout_width="171dp"
+        android:layout_height="33dp"
+        android:text="@string/timeChosen1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/locationMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <TextView
+        android:id="@+id/timeChosenDynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeSelected"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/locationMain"
+        app:layout_constraintStart_toEndOf="@+id/timeChosen1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <TextView
+        android:id="@+id/locationMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/locationMain"
+        android:textSize="48sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.318"
+        tools:text="@string/locationMain" />
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationMain"
+        app:layout_constraintVertical_bias="0.562">
+
+        <Button
+            android:id="@+id/locButHans"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="@string/locButHans"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/locButUrban"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="@string/locButUrban"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/locButNorthside"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="@string/locButNorthside"
+            android:textSize="36sp" />
+
+        <Button
+            android:id="@+id/locButComingSoon"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="@string/locButComingSoon"
+            android:textSize="36sp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

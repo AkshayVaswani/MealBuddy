@@ -5,7 +5,6 @@
     android:id="@+id/butt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< Updated upstream
     tools:context=".MainActivity">
 
     <Button
@@ -28,6 +27,3 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
-=======
-    tools:context=".MainActivity"/>
->>>>>>> Stashed changes
