@@ -6,4 +6,104 @@
     android:layout_height="match_parent"
     tools:context=".userAuth.SignUp">
 
+    <Button
+        android:id="@+id/SignUpButt"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SignUpPassword2"
+        app:layout_constraintVertical_bias="0.662" />
+
+    <EditText
+        android:id="@+id/SignUpPassword2"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Password: Abcd123"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/SignUpPassword1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpEmail"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/SignUpEmail"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="abc@drexel.edu"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpName" />
+
+    <EditText
+        android:id="@+id/SignUpName"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:hint="Bob Murray"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MealBuddy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Buddy"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/SignUpPassword1"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="252dp"
+        android:ems="10"
+        android:hint="Password: Abcd123"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/SignUpTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="Already have an account? Sign In here"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpButt"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree to the privacy policy"
+        app:layout_constraintBottom_toTopOf="@+id/SignUpButt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUpPassword1"
+        app:layout_constraintVertical_bias="0.546" />
 </androidx.constraintlayout.widget.ConstraintLayout>

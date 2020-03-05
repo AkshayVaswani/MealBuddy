@@ -81,7 +81,8 @@
     <string name="locButComingSoon">Coming Soon...</string>
     <string name="timeChosen1">Time Chosen: </string>
 
-    <string name='emailAuthBut'>Continue</string>
+    <string name='verifybutton'>Resend verification email</string>
+    <string name='verifiedbutton'>I\'m verified!</string>
 
     <color name="tan">#CFB796</color>
     <color name="gray">#555555</color>

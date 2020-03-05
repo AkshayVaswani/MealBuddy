@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.mealbuddy.R;
+
 public class mainReportPage extends AppCompatActivity {
 
     @Override

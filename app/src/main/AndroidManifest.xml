@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mealbuddy">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,19 +28,19 @@
         <activity android:name=".duringEvent.cancelation.buddyCancelled" />
         <activity android:name=".duringEvent.matching.noMatchFound" />
         <activity android:name=".duringEvent.matching.matchFound" />
-        <activity android:name=".duringEvent.matching.findingBuddy" />
-        <activity android:name=".mainPage.findAMealBuddy.requestSubmit" />
-        <activity android:name=".mainPage.findAMealBuddy.location" />
-        <activity android:name=".mainPage.findAMealBuddy.time" />
-        <activity android:name=".mainPage.findAMealBuddy.outfit" />
+        <activity android:name=".duringEvent.matching.findingBuddy" android:exported="true"/>
+        <activity android:name=".mainPage.findAMealBuddy.requestSubmit" android:exported="true"/>
+        <activity android:name=".mainPage.findAMealBuddy.location" android:exported="true"/>
+        <activity android:name=".mainPage.findAMealBuddy.time" android:exported="true"/>
+        <activity android:name=".mainPage.findAMealBuddy.outfit" android:exported="true"/>
         <activity android:name=".mainPage.mealHistory.mealHistory" />
         <activity android:name=".mainPage.settings.settingsPage" />
         <activity android:name=".mainPage.settings.aboutPage" />
         <activity android:name=".mainPage.mainPage" />
         <activity android:name=".userAuth.emailAuth" />
         <activity android:name=".userAuth.ProfilePage" />
-        <activity android:name=".userAuth.SignUp" />
-        <activity android:name=".userAuth.LoginPage" />
+        <activity android:name=".userAuth.SignUp" android:exported="true"/>
+        <activity android:name=".userAuth.LoginPage" android:exported="true"/>
 
         <activity android:name=".MainActivity">
             <intent-filter>

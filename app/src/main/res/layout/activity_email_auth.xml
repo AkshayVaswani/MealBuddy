@@ -79,16 +79,29 @@
         tools:text="@string/emailAuthMain" />
 
     <Button
-        android:id="@+id/emailAuthB"
-        android:layout_width="253dp"
-        android:layout_height="65dp"
-        android:text="@string/emailAuthBut"
+        android:id="@+id/verifybutton"
+        android:layout_width="317dp"
+        android:layout_height="82dp"
+        android:text="@string/verifybutton"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.8"
-        tools:text="@string/emailAuthBut" />
+        tools:text="@string/verifybutton" />
+
+    <Button
+        android:id="@+id/verifiedbutton"
+        android:layout_width="253dp"
+        android:layout_height="65dp"
+        android:text="@string/verifiedbutton"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.914"
+        tools:text="@string/verifiedbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

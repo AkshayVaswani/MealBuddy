@@ -6,4 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".userAuth.LoginPage">
 
+    <Button
+        android:id="@+id/SignInButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInPassword"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <EditText
+        android:id="@+id/SignInEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <EditText
+        android:id="@+id/SignInPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create acc"
+        app:layout_constraintBottom_toTopOf="@+id/ForgetPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInButt" />
+
+    <TextView
+        android:id="@+id/ForgetPassword"
+        android:layout_width="136dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="40dp"
+        android:text="forget pass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInButt" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

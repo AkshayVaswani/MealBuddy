@@ -7,6 +7,8 @@
     tools:context=".mainPage.findAMealBuddy.location"
     android:background="@color/tan">
 
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="0dp"
