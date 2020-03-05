@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.mealbuddy.mainPage.findAMealBuddy.time;
 import com.example.mealbuddy.mainPage.mainPage;
 import com.example.mealbuddy.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -56,10 +57,10 @@ public class LoginPage extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             Toast.makeText(LoginPage.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), mainPage.class));
+                            startActivity(new Intent(getApplicationContext(), time.class));
                         }
                         else{
-                            Toast.makeText(LoginPage.this,"Error, please try again letter" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginPage.this,"Error, please try again later", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

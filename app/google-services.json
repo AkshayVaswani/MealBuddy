@@ -1,0 +1,72 @@
+{
+  "project_info": {
+    "project_number": "820631871245",
+    "firebase_url": "https://mealbuddyproject.firebaseio.com",
+    "project_id": "mealbuddyproject",
+    "storage_bucket": "mealbuddyproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820631871245:android:aff3a1dbb56b7cefc99a44",
+        "android_client_info": {
+          "package_name": "com.example.mealbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820631871245-m5egcanah2vsnqrauuptssq4lecresc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealbuddy",
+            "certificate_hash": "a3622b84c20e6431e6f50475728504190373838b"
+          }
+        },
+        {
+          "client_id": "820631871245-vgftibrmef1n0k5l2j782tjtuvu9ofc0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealbuddy",
+            "certificate_hash": "37b6d60a91e76bfbba5b0dc05c055b19de5eb6f9"
+          }
+        },
+        {
+          "client_id": "820631871245-b5c6aht7f7hgl6j0gdv0fcsf5cli0e2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealbuddy",
+            "certificate_hash": "c5c8d69ca38a4becd7327cadc58239367898546d"
+          }
+        },
+        {
+          "client_id": "820631871245-f8qtut7k6drrnecj9hckp4i4dgtocdb1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealbuddy",
+            "certificate_hash": "3c8e07771da638a657b6025531fbf4e9046db3c7"
+          }
+        },
+        {
+          "client_id": "820631871245-dr1cnjbk2h4b4o1u5fdtujifdg11mrfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJUdE3GuO1W_qaPIpDLBZEMrfrUDSW5sY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "820631871245-dr1cnjbk2h4b4o1u5fdtujifdg11mrfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -40,9 +40,9 @@
         <activity android:name=".userAuth.emailAuth" />
         <activity android:name=".userAuth.ProfilePage" />
         <activity android:name=".userAuth.SignUp" android:exported="true"/>
-        <activity android:name=".userAuth.LoginPage" android:exported="true"/>
+        <activity android:name=".MainActivity" android:exported="true"/>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".userAuth.LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
