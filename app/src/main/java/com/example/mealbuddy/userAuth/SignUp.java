@@ -67,7 +67,7 @@ public class SignUp extends AppCompatActivity {
                 }
 
                 if(!email.contains("@drexel.edu")){
-                    SUPass.setError("Please use your Drexel email for this Account");
+                    SUEmail.setError("Please use your Drexel email for this Account");
                     return;
                 }
 

@@ -46,8 +46,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="396dp"
-        android:layout_height="119dp"
+        android:layout_width="385dp"
+        android:layout_height="95dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -16,7 +16,7 @@
         android:gravity="center"
         android:shadowColor="#00473B3B"
         android:singleLine="false"
-        android:text="@string/locationMain"
+        android:text="@string/signUpMain"
         android:textColor="@color/text"
         android:textSize="36sp"
         android:typeface="sans"
