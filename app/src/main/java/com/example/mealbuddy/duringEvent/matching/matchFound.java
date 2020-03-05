@@ -21,7 +21,6 @@ public class matchFound extends AppCompatActivity {
     Button btn;
     DatabaseReference reff;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

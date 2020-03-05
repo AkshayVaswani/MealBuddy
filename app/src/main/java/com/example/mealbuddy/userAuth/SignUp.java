@@ -15,10 +15,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.mealbuddy.R;
 import com.example.mealbuddy.mainPage.mainPage;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -65,7 +67,7 @@ public class SignUp extends AppCompatActivity {
                 }
 
                 if(!email.contains("@drexel.edu")){
-                    SUPass.setError("Please use your Drexel Password for this Account");
+                    SUPass.setError("Please use your Drexel email for this Account");
                     return;
                 }
 
@@ -75,7 +77,7 @@ public class SignUp extends AppCompatActivity {
                 }
 
                 if(password.length()<10){
-                    SUPass.setError("Password must be longer than 10");
+                    SUPass.setError("Password must be more than 10 characters long");
                     return;
                 }
 
@@ -98,6 +100,18 @@ public class SignUp extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
+                            FirebaseUser userAuth = fAuth.getCurrentUser();
+                            userAuth.sendEmailVerification().addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void aVoid) {
+                                    Toast.makeText(SignUp.this,"Verification Email Sent.", Toast.LENGTH_SHORT).show();
+                                }
+                            }).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d("TAG", "OnFailure: Verification not sent. " + e.getMessage());
+                                }
+                            });
                             Toast.makeText(SignUp.this, "Successfully Registered", Toast.LENGTH_SHORT).show();
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
