@@ -1,542 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainPage.findAMealBuddy.time"
+    android:background="@drawable/background_grad">
+
+
+    <View
+        android:id="@+id/logoBack"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/tan"
-        tools:context=".mainPage.findAMealBuddy.time">
-
-
-        <View
-            android:id="@+id/view3"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_alignParentTop="true"
-            android:background="@color/gray"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0"
-            tools:layout_editor_absoluteX="16dp" />
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="0dp"
-            android:layout_height="100dp"
-            android:background="#F1ECE8"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <View
-            android:id="@+id/view4"
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginBottom="588dp"
-            android:background="@color/gray"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="40dp" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="380dp"
-            android:layout_height="72dp"
-            android:contentDescription="@string/app_name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0.01999998"
-            app:srcCompat="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:shadowColor="#00473B3B"
-            android:singleLine="false"
-            android:text="@string/timeMain"
-            android:textSize="48sp"
-            android:typeface="sans"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/toolbar"
-            app:layout_constraintVertical_bias="0.149"
-            tools:text="@string/timeMain" />
-
-    <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="571dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/logoback3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.421">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="354dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/logoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/timeMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/timeMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/timeMain"
+        android:textColor="@color/text"
+        android:textSize="48sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/timeMain" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="544dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeMain"
+        app:layout_constraintVertical_bias="1.0">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <Button
-                android:id="@+id/timeBut7a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7_15a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7_15a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7_30a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7_30a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7_45atimeBut7_45a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7_45a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8_15a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8_15a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8_30a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8_30a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8_45a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8_45a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9_15a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9_15a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9_30a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9_30a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9_45a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9_45a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10_15a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10_15a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10_30a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10_30a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10_45a"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10_45a"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut11"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut11"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut11_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut11_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut11_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut11_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut11_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut11_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut12"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut12"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut12_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut12_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut12_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut12_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut12_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut12_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut1"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut1"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut1_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut1_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut1_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut1_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut1_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut1_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut2"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut2"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut2_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut2_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut2_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut2_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut2_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut2_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut3"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut3"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut3_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut3_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut3_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut3_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut3_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut3_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut4"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut4"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut4_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut4_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut4_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut4_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut4_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut4_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut5"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut5"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut5_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut5_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut5_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut5_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut5_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut5_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut6"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut6"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut6_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut6_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut6_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut6_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut6_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut6_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut7_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut7_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut8_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut8_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut9_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut9_45"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10_15"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10_15"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10_30"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10_30"
-                android:textSize="30sp" />
-
-            <Button
-                android:id="@+id/timeBut10_45"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
-                android:text="@string/timeBut10_45"
-                android:textSize="30sp" />
-        </LinearLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

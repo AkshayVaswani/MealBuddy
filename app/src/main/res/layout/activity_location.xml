@@ -5,142 +5,155 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mainPage.findAMealBuddy.location"
-    android:background="@color/tan">
+    android:background="@drawable/background_grad">
 
 
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="#F1ECE8"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <View
+        android:id="@+id/logoBack"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/logoback3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.00" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="380dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="28dp"
+        android:id="@+id/logo"
+        android:layout_width="354dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
         android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/logoBack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.789"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logo" />
 
     <View
-        android:id="@+id/view5"
+        android:id="@+id/line1"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_alignParentTop="true"
         android:background="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="77dp" />
-
-    <View
-        android:id="@+id/view6"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_alignParentTop="true"
-        android:background="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/locationMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/timeChosen1"
         android:layout_width="171dp"
         android:layout_height="33dp"
         android:text="@string/timeChosen1"
+        android:textColor="@color/text"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/locationMain"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.571" />
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.569" />
 
     <TextView
         android:id="@+id/timeChosenDynamic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/timeSelected"
+        android:textColor="@color/text"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/locationMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/timeChosen1"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.57" />
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.574" />
 
     <TextView
         android:id="@+id/locationMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
         android:gravity="center"
         android:shadowColor="#00473B3B"
         android:singleLine="false"
         android:text="@string/locationMain"
-        android:textSize="48sp"
+        android:textColor="@color/text"
+        android:textSize="36sp"
         android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.458"
+        tools:text="@string/locationMain" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity='center'
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.318"
-        tools:text="@string/locationMain" />
-
-    <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locationMain"
-        app:layout_constraintVertical_bias="0.562">
+        app:layout_constraintTop_toBottomOf="@+id/line1"
+        app:layout_constraintVertical_bias="0.763">
 
         <Button
             android:id="@+id/locButHans"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@color/buttonBrown"
+            android:textColor="@color/buttonText"
             android:text="@string/locButHans"
-            android:textSize="36sp" />
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <Button
             android:id="@+id/locButUrban"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@color/buttonBrown"
+            android:textColor="@color/buttonText"
             android:text="@string/locButUrban"
-            android:textSize="36sp" />
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <Button
             android:id="@+id/locButNorthside"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@color/buttonBrown"
+            android:textColor="@color/buttonText"
             android:text="@string/locButNorthside"
-            android:textSize="36sp" />
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <Button
             android:id="@+id/locButComingSoon"
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@color/buttonBrown"
+            android:textColor="@color/buttonText"
             android:text="@string/locButComingSoon"
-            android:textSize="36sp" />
+            android:textSize="24sp" />
 
     </LinearLayout>
 

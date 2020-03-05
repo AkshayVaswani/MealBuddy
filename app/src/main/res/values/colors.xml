@@ -3,6 +3,14 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#777777</color>
-    <color name="grad1">#777777</color>
-    <color name="grad2">#CCCCCC</color>
+    <color name="logoback1">#AD9574</color>
+    <color name="logoback2">#CFB796</color>
+    <color name="logoback3">#BEA685</color>
+    <color name="tan1">#8B7352</color>
+    <color name="tan2">#AD9574</color>
+    <color name="gray">#555555</color>
+    <color name="text">#333333</color>
+    <color name="buttonBrown">#CFB796</color>
+    <color name="buttonText">#333333</color>
+
 </resources>
