@@ -66,7 +66,7 @@ public class SignUp extends AppCompatActivity {
                     return;
                 }
 
-                if(!email.contains("@drexel.edu")){
+                if(!email.contains("drexel.edu")){
                     SUEmail.setError("Please use your Drexel email for this Account");
                     return;
                 }
@@ -116,9 +116,10 @@ public class SignUp extends AppCompatActivity {
                             userID = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("users").document(userID);
                             Map <String, Object> user = new HashMap<>();
-                            user.put("first name", name);
+                            user.put("name", name);
                             user.put("email", email);
                             user.put("password", password);
+                            user.put("userID", userID);
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

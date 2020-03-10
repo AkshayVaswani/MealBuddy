@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mealbuddy.mainPage.findAMealBuddy.time;
-import com.example.mealbuddy.mainPage.mainPage;
 import com.example.mealbuddy.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
