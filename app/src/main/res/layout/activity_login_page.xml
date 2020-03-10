@@ -14,6 +14,7 @@
         android:layout_height="3dp"
         android:layout_alignParentTop="true"
         android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,15 +47,15 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="385dp"
-        android:layout_height="95dp"
+        android:layout_width="376dp"
+        android:layout_height="82dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106"
+        app:layout_constraintVertical_bias="0.124"
         app:srcCompat="@drawable/logo" />
 
     <Button

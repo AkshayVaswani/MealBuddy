@@ -22,6 +22,11 @@
     <string name='verifybutton'>Resend verification email</string>
     <string name='verifiedbutton'>I\'m verified!</string>
 
+    <string name="outfitMain">Describe what you\'re wearing today</string>
+    <string name="outfit2">This will be used to help your buddy find you!</string>
+    <string name="outfitHint">I\'m wearing a gray jacket, red sneakers...</string>
+    <string name="submit">Submit</string>
+
     <string name="timeMain">Select your Time</string>
 
     <string name="locationMain">Select your Location</string>
@@ -31,9 +36,14 @@
     <string name="locButNorthside">Northside Dining</string>
     <string name="locButComingSoon">Coming Soon...</string>
 
-
+    <string name="requestSubmitMain">Submit Match Request?</string>
+    <string name="locChosen1">Place Chosen: </string>
+    <string name="outfitChosen1">Outfit Chosen: </string>
     <string name="timeSelected">[N/A]</string>
     <string name="locationSelected">[N/A]</string>
+    <string name="outfitSelected">[N/A]</string>
+
+    <string name="findingBuddyMain">Searching for your buddy...</string>
 
 
 

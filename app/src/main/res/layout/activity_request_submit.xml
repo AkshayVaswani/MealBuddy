@@ -4,6 +4,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainPage.findAMealBuddy.requestSubmit">
+    tools:context=".mainPage.findAMealBuddy.location"
+    android:background="@drawable/background_grad">
+
+
+    <Button
+        android:id="@+id/outfitSubmitBut2"
+        android:layout_width="213dp"
+        android:layout_height="71dp"
+        android:background="@color/buttonBrown"
+        android:text="@string/submit"
+        android:textColor="@color/buttonText"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.893"
+        tools:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/requestSubmitMain"
+        android:layout_width="337dp"
+        android:layout_height="98dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/requestSubmitMain"
+        android:textColor="@color/text"
+        android:textSize="36sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.072"
+        tools:text="@string/requestSubmitMain" />
+
+    <View
+        android:id="@+id/logoBack"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/logoback3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="354dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/logoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/locationMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/outfitDynamic"
+        android:layout_width="150dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/outfitSelected"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toEndOf="@+id/outfitChosen"
+        app:layout_constraintTop_toTopOf="@+id/outfitChosen"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/locationChosen"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:text="@string/locChosen1"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeChosen"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/timeDynamic2"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:text="@string/timeSelected"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/timeChosen"
+        app:layout_constraintTop_toTopOf="@+id/timeChosen"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/timeSelected" />
+
+    <TextView
+        android:id="@+id/locDynamic"
+        android:layout_width="141dp"
+        android:layout_height="64dp"
+        android:text="@string/locationSelected"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/locationChosen"
+        app:layout_constraintTop_toTopOf="@+id/locationChosen"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/locationSelected" />
+
+    <TextView
+        android:id="@+id/outfitChosen"
+        android:layout_width="170dp"
+        android:layout_height="38dp"
+        android:text="@string/outfitChosen1"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationChosen"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <TextView
+        android:id="@+id/timeChosen"
+        android:layout_width="157dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/timeChosen1"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestSubmitMain"
+        app:layout_constraintVertical_bias="0.019" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
