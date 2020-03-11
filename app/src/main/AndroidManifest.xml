@@ -12,6 +12,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+
         <activity android:name=".afterEvent.reporting.backToMain" />
         <activity android:name=".afterEvent.reporting.thanksForNotfiying" />
         <activity android:name=".afterEvent.reporting.didntShow" />
@@ -25,7 +26,15 @@
         <activity android:name=".duringEvent.cancelation.meCancelling" />
         <activity android:name=".duringEvent.cancelation.buddyCancelled" />
         <activity android:name=".duringEvent.matching.noMatchFound" />
-        <activity android:name=".duringEvent.matching.matchFound" />
+        <activity android:name=".duringEvent.matching.matchFound">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
         <activity android:name=".duringEvent.matching.findingBuddy" />
         <activity android:name=".mainPage.findAMealBuddy.requestSubmit" />
         <activity android:name=".mainPage.findAMealBuddy.location" />

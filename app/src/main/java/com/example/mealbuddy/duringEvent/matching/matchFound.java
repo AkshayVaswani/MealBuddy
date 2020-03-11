@@ -1,13 +1,13 @@
-package com.example.mealbuddy.duringEvent.matching;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.mealbuddy .duringEvent.matching;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mealbuddy.R;
 import com.google.firebase.database.DataSnapshot;
