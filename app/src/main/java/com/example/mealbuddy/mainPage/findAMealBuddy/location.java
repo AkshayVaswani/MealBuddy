@@ -47,10 +47,12 @@ public class location extends AppCompatActivity {
         hans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String time = timeC.getText().toString().trim();
+                String location = "Hans";
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map <String, Object> user = new HashMap<>();
-                user.put("time", timeChosen);
-                user.put("location", "Hans");
+                user.put("time", time);
+                user.put("location", location);
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -65,10 +67,12 @@ public class location extends AppCompatActivity {
         urban.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String time = timeC.getText().toString().trim();
+                String location = "Urban";
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map <String, Object> user = new HashMap<>();
-                user.put("time", timeChosen);
-                user.put("location", "Urban");
+                user.put("time", time);
+                user.put("location", location);
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
@@ -83,10 +87,12 @@ public class location extends AppCompatActivity {
         north.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String time = timeC.getText().toString().trim();
+                String location = "North Side";
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map<String, Object> user = new HashMap<>();
-                user.put("time", timeChosen);
-                user.put("location", "North Side");
+                user.put("time", time);
+                user.put("location", location);
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
