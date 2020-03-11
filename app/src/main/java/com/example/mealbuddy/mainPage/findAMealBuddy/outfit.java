@@ -40,10 +40,11 @@ public class outfit extends AppCompatActivity {
         SubButt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String out_fit = outfit.getText().toString().trim();
                 userID = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map<String, Object> user = new HashMap<>();
-                user.put("outfit", outfit);
+                user.put("outfit", out_fit);
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
