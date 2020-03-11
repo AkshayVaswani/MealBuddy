@@ -49,7 +49,7 @@ public class location extends AppCompatActivity {
             public void onClick(View v) {
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map <String, Object> user = new HashMap<>();
-                user.put("time", timeC);
+                user.put("time", timeChosen);
                 user.put("location", "Hans");
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -67,15 +67,15 @@ public class location extends AppCompatActivity {
             public void onClick(View v) {
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map <String, Object> user = new HashMap<>();
-                user.put("time", timeC);
+                user.put("time", timeChosen);
                 user.put("location", "Urban");
-
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Log.d("TAG", "Added to database" + userID);
+                        Log.d("TAG", "Added to database " + userID);
                     }
                 });
+
                 startActivity(new Intent(getApplicationContext(), outfit.class));
             }
         });
@@ -85,7 +85,7 @@ public class location extends AppCompatActivity {
             public void onClick(View v) {
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map<String, Object> user = new HashMap<>();
-                user.put("time", timeC);
+                user.put("time", timeChosen);
                 user.put("location", "North Side");
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
