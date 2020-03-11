@@ -1,5 +1,5 @@
 package com.example.mealbuddy.mainPage.findAMealBuddy;
-
+import com.example.mealbuddy.mainPage.mainPage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -52,7 +52,7 @@ public class outfit extends AppCompatActivity {
                         Log.d("TAG", "Added to database" + userID);
                     }
                 });
-                startActivity(new Intent(getApplicationContext(), outfit.class));
+                startActivity(new Intent(getApplicationContext(), mainPage.class));
             }
 
         });
