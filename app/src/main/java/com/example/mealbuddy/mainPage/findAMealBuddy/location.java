@@ -4,19 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.mealbuddy.R;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Objects;
 
 public class location extends AppCompatActivity {
@@ -47,60 +41,33 @@ public class location extends AppCompatActivity {
         hans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String time = timeC.getText().toString().trim();
                 String location = "Hans";
-                DocumentReference documentReference = fStore.collection("users").document(userID);
-                Map <String, Object> user = new HashMap<>();
-                user.put("time", time);
-                user.put("location", location);
-
-                documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d("TAG", "Added to database" + userID);
-                    }
-                });
-                startActivity(new Intent(getApplicationContext(), outfit.class));
+                Intent intent = new Intent(location.this, outfit.class);
+                intent.putExtra("Chosen Location", location);
+                intent.putExtra("Chosen Time", timeChosen);
+                startActivity(intent);
             }
         });
 
         urban.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String time = timeC.getText().toString().trim();
                 String location = "Urban";
-                DocumentReference documentReference = fStore.collection("users").document(userID);
-                Map <String, Object> user = new HashMap<>();
-                user.put("time", time);
-                user.put("location", location);
-                documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d("TAG", "Added to database " + userID);
-                    }
-                });
-
-                startActivity(new Intent(getApplicationContext(), outfit.class));
+                Intent intent = new Intent(location.this, outfit.class);
+                intent.putExtra("Chosen Location", location);
+                intent.putExtra("Chosen Time", timeChosen);
+                startActivity(intent);
             }
         });
 
         north.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String time = timeC.getText().toString().trim();
                 String location = "North Side";
-                DocumentReference documentReference = fStore.collection("users").document(userID);
-                Map<String, Object> user = new HashMap<>();
-                user.put("time", time);
-                user.put("location", location);
-
-                documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d("TAG", "Added to database " + userID);
-                    }
-                });
-                startActivity(new Intent(getApplicationContext(), outfit.class));
+                Intent intent = new Intent(location.this, outfit.class);
+                intent.putExtra("Chosen Location", location);
+                intent.putExtra("Chosen Time", timeChosen);
+                startActivity(intent);
             }
         });
     }

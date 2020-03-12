@@ -25,12 +25,15 @@ public class outfit extends AppCompatActivity {
     String userID;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
+    Intent intent = getIntent();
+    String time, location;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_outfit2);
-
+        time = intent.getStringExtra("Chosen Time");
+        location = intent.getStringExtra("Chosen Location");
         outfit = findViewById(R.id.outfitInput);
         SubButt = findViewById(R.id.outfitSubmitBut);
 
@@ -45,6 +48,8 @@ public class outfit extends AppCompatActivity {
                 DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map<String, Object> user = new HashMap<>();
                 user.put("outfit", out_fit);
+                user.put("time", time);
+                user.put("location", location);
 
                 documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
