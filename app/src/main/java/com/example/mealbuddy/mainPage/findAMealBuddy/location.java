@@ -41,9 +41,9 @@ public class location extends AppCompatActivity {
         hans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = "Hans";
+                String locationStr = "Hans";
                 Intent intent = new Intent(location.this, outfit.class);
-                intent.putExtra("Chosen Location", location);
+                intent.putExtra("Chosen Location", locationStr);
                 intent.putExtra("Chosen Time", timeChosen);
                 startActivity(intent);
             }
@@ -52,9 +52,9 @@ public class location extends AppCompatActivity {
         urban.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = "Urban";
+                String locationStr = "Urban";
                 Intent intent = new Intent(location.this, outfit.class);
-                intent.putExtra("Chosen Location", location);
+                intent.putExtra("Chosen Location", locationStr);
                 intent.putExtra("Chosen Time", timeChosen);
                 startActivity(intent);
             }
@@ -63,9 +63,9 @@ public class location extends AppCompatActivity {
         north.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String location = "North Side";
+                String locationStr = "North Side";
                 Intent intent = new Intent(location.this, outfit.class);
-                intent.putExtra("Chosen Location", location);
+                intent.putExtra("Chosen Location", locationStr);
                 intent.putExtra("Chosen Time", timeChosen);
                 startActivity(intent);
             }
