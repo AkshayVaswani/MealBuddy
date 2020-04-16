@@ -26,6 +26,7 @@
     <string name="outfit2">This will be used to help your buddy find you!</string>
     <string name="outfitHint">I\'m wearing a gray jacket, red sneakers...</string>
     <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
 
     <string name="timeMain">Select your Time</string>
 
@@ -45,6 +46,17 @@
 
     <string name="findingBuddyMain">Searching for your buddy...</string>
 
+    <string name="matchFoundMain">We\'ve found you a match!</string>
+    <string name="matchFoundOutfit">Your buddy\'s outfit:</string>
+    <string name="buddyOutfitDynamic">This will be revealed two minutes before your meal is set to start!</string>
+    <string name="matchFoundProceed">Go ahead and proceed to the location of your meal!</string>
+
+    <string name="noMatchMain">We\'re sorry...</string>
+    <string name="noMatchMain2">No match found</string>
+    <string name="noMatchMain3">Sometimes, it just happens that no one ends up signing up for the same time and place.</string>
+    <string name="noMatchMain4">If this keeps happening to you, try searching at more common meal times!</string>
+    <string name="noMatchMain5">Remember - matches are assigned completely randomly.</string>
+    <string name="backToHome">Back To Home</string>
 
 
 

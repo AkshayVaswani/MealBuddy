@@ -68,21 +68,33 @@
         android:id="@+id/loadingPanel"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="344dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoBack"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/findingBuddyMain"
+        app:layout_constraintVertical_bias="0.22000003">
 
         <ProgressBar
             android:id="@+id/progressBar"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginTop="0dp"
             android:indeterminate="true" />
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="213dp"
+        android:layout_height="71dp"
+        android:background="@color/buttonBrown"
+        android:text="@string/cancel"
+        android:textColor="@color/buttonText"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadingPanel"
+        app:layout_constraintVertical_bias="0.474" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

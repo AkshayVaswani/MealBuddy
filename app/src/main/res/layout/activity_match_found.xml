@@ -4,6 +4,199 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".duringEvent.matching.matchFound">
+    tools:context=".mainPage.findAMealBuddy.location"
+    android:background="@drawable/background_grad">
+
+
+    <Button
+        android:id="@+id/cancelBad"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:background="@color/buttonBrown"
+        android:text="@string/cancel"
+        android:textColor="@color/buttonText"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchFoundProceed"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <TextView
+        android:id="@+id/matchFoundMain"
+        android:layout_width="337dp"
+        android:layout_height="98dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/matchFoundMain"
+        android:textColor="@color/text"
+        android:textSize="36sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.072"
+        tools:text="@string/matchFoundMain" />
+
+    <View
+        android:id="@+id/logoBack"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/logoback3"
+        app:layout_constraintBottom_toBottomOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="354dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="@+id/logoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/locationChosen"
+        android:layout_width="167dp"
+        android:layout_height="37dp"
+        android:text="@string/locChosen1"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeChosen"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TextView
+        android:id="@+id/timeDynamic2"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:text="@string/timeSelected"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/timeChosen"
+        app:layout_constraintTop_toTopOf="@+id/timeChosen"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/timeSelected" />
+
+    <TextView
+        android:id="@+id/locDynamic"
+        android:layout_width="141dp"
+        android:layout_height="64dp"
+        android:text="@string/locationSelected"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toEndOf="@+id/locationChosen"
+        app:layout_constraintTop_toTopOf="@+id/locationChosen"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/locationSelected" />
+
+
+    <TextView
+        android:id="@+id/timeChosen"
+        android:layout_width="157dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/timeChosen1"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchFoundMain"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <TextView
+        android:id="@+id/matchFoundOutfit"
+        android:layout_width="334dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/matchFoundOutfit"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locDynamic"
+        app:layout_constraintVertical_bias="0.062"
+        tools:text="@string/matchFoundOutfit" />
+
+    <TextView
+        android:id="@+id/buddyOutfitDynamic"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/buddyOutfitDynamic"
+        android:textColor="@color/text"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchFoundOutfit"
+        app:layout_constraintVertical_bias="0.09"
+        tools:text="@string/buddyOutfitDynamic" />
+
+    <TextView
+        android:id="@+id/matchFoundProceed"
+        android:layout_width="328dp"
+        android:layout_height="76dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/matchFoundProceed"
+        android:textColor="@color/text"
+        android:textSize="28sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buddyOutfitDynamic"
+        app:layout_constraintVertical_bias="0.269"
+        tools:text="@string/matchFoundProceed" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

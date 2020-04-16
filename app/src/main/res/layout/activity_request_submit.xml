@@ -19,8 +19,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logoBack"
-        app:layout_constraintVertical_bias="0.893"
+        app:layout_constraintTop_toBottomOf="@+id/outfitDynamic"
+        app:layout_constraintVertical_bias="0.246"
         tools:text="@string/submit" />
 
     <TextView
@@ -74,7 +74,7 @@
         android:layout_height="3dp"
         android:layout_alignParentTop="true"
         android:background="@color/gray"
-        app:layout_constraintBottom_toBottomOf="@+id/locationMain"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoBack"
         app:layout_constraintVertical_bias="0.0" />
@@ -170,5 +170,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/requestSubmitMain"
         app:layout_constraintVertical_bias="0.019" />
+
+    <Button
+        android:id="@+id/backToHome"
+        android:layout_width="213dp"
+        android:layout_height="71dp"
+        android:background="@color/buttonBrown"
+        android:text="@string/cancel"
+        android:textColor="@color/buttonText"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outfitSubmitBut2"
+        app:layout_constraintVertical_bias="0.589"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
