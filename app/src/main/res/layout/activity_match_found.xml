@@ -9,19 +9,33 @@
 
 
     <Button
-        android:id="@+id/cancelBad"
-        android:layout_width="89dp"
-        android:layout_height="34dp"
+    android:id="@+id/cancelBad"
+    android:layout_width="89dp"
+    android:layout_height="34dp"
+    android:background="@color/buttonBrown"
+    android:text="@string/cancel"
+    android:textColor="@color/buttonText"
+    android:textSize="16sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.049"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/matchFoundProceed"
+    app:layout_constraintVertical_bias="0.589" />
+
+    <Button
+        android:id="@+id/mealDone"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
         android:background="@color/buttonBrown"
-        android:text="@string/cancel"
+        android:text="@string/mealDone"
         android:textColor="@color/buttonText"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/matchFoundProceed"
-        app:layout_constraintVertical_bias="0.589" />
+        app:layout_constraintVertical_bias="0.35" />
 
     <TextView
         android:id="@+id/matchFoundMain"
