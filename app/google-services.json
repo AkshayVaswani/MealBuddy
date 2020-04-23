@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "820631871245-m5egcanah2vsnqrauuptssq4lecresc2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mealbuddy",
+            "certificate_hash": "a3622b84c20e6431e6f50475728504190373838b"
+          }
+        },
+        {
           "client_id": "820631871245-vgftibrmef1n0k5l2j782tjtuvu9ofc0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
