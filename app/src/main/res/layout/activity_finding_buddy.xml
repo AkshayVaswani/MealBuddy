@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/findingBuddyMain"
-        android:layout_width="347dp"
-        android:layout_height="228dp"
+        android:layout_width="341dp"
+        android:layout_height="155dp"
         android:gravity="center"
         android:shadowColor="#00473B3B"
         android:singleLine="false"
@@ -21,10 +21,29 @@
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoBack"
-        app:layout_constraintVertical_bias="0.099"
+        app:layout_constraintVertical_bias="0.055"
         tools:text="@string/findingBuddyMain" />
+
+    <TextView
+        android:id="@+id/findingBuddy2"
+        android:layout_width="341dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:shadowColor="#00473B3B"
+        android:singleLine="false"
+        android:text="@string/findingBuddy2"
+        android:textColor="@color/text"
+        android:textSize="30sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findingBuddyMain"
+        app:layout_constraintVertical_bias="0.057" />
 
     <View
         android:id="@+id/logoBack"
@@ -73,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findingBuddyMain"
+        app:layout_constraintTop_toBottomOf="@+id/findingBuddy2"
         app:layout_constraintVertical_bias="0.22000003">
 
         <ProgressBar

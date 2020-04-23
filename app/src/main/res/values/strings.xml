@@ -45,6 +45,7 @@
     <string name="outfitSelected">[N/A]</string>
 
     <string name="findingBuddyMain">Searching for your buddy...</string>
+    <string name="findingBuddy2">We\'ll send you a notification when you get a match!</string>
 
     <string name="matchFoundMain">We\'ve found you a match!</string>
     <string name="matchFoundOutfit">Your buddy\'s outfit:</string>
@@ -59,6 +60,16 @@
     <string name="backToHome">Back To Home</string>
     <string name="mealDone">Meal Done</string>
 
+    <string name="meCancellingMain">Are you sure?</string>
+    <string name="meCancelling2">Canceling too often can result in you being suspended from the app.</string>
+    <string name="meCancelling3">Your buddy is counting on you to be there!</string>
+    <string name="meCancellingBut">I have no choice - Cancel Anyway</string>
 
+    <string name="buddyCancelledMain">Your buddy had to cancel</string>
+    <string name="buddyCancelled2">They\'ve been warned that frequent cancelling can get them suspended from the app.</string>
+    <string name="buddyCancelled3">We hope your next meal turns out better!</string>
+
+    <string name="meCancelledMain">Match Cancelled</string>
+    <string name="meCancelled2">We\'ve notified your buddy. Please do your best not to cancel in the future.</string>
 
 </resources>
