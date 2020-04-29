@@ -71,9 +71,7 @@
         android:id="@+id/logo"
         android:layout_width="354dp"
         android:layout_height="51dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
         android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="@+id/logoBack"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +106,7 @@
         app:layout_constraintVertical_bias="0.125" />
 
     <TextView
-        android:id="@+id/timeDynamic2"
+        android:id="@+id/timeDynamic"
         android:layout_width="127dp"
         android:layout_height="39dp"
         android:text="@string/timeSelected"

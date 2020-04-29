@@ -62,9 +62,8 @@ public class outfit extends AppCompatActivity {
                         Log.d("TAG", "Added to database" + userID);
                     }
                 });
-                startActivity(new Intent(getApplicationContext(), mainPage.class));
+                startActivity(new Intent(getApplicationContext(), requestSubmit.class));
             }
-
         });
     }
 }
