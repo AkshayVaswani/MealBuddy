@@ -72,4 +72,15 @@
     <string name="meCancelledMain">Match Cancelled</string>
     <string name="meCancelled2">We\'ve notified your buddy. Please do your best not to cancel in the future.</string>
 
+    <string name="overallReviewMain">Would you like to be eligible to match with your buddy again?</string>
+    <string name="overallReviewBuddy">Buddy\'s name:</string>
+    <string name="overallReviewBuddyDynamic">N/A</string>
+    <string name="overallReviewYes">Yes - we really hit it off!</string>
+    <string name="overallReviewWait">Yes - but only after a while has passed.</string>
+    <string name="overallReviewNo">No thank you.</string>
+    <string name="overallReviewReport"> No - and I\'d like to <u>report</u> my buddy.</string>
+
+    <string name="veryGoodMain">Nice!</string>
+    <string name="veryGood2">We\’re glad to have been able to help you meet a cool person.</string>
+
 </resources>
