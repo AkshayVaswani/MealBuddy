@@ -16,8 +16,6 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.sql.Time;
-
 public class matchFound extends AppCompatActivity {
     TextView TimeChosen, PlaceChosen, OutfitChosen;
     Button ButtMealDone, ButtCancel;

@@ -25,7 +25,10 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
+import static android.os.SystemClock.sleep;
+
 public class findingBuddy extends AppCompatActivity {
+    Boolean loop;
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
     ProgressBar pBar;
@@ -43,51 +46,57 @@ public class findingBuddy extends AppCompatActivity {
         userID = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
         final CollectionReference collectionReference = fStore.collection("users");
         DocumentReference documentReference = fStore.collection("users").document(userID);
-        documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    final DocumentSnapshot documentSnapshot = task.getResult();
-                    if (documentSnapshot != null) {
-                        TimeChosen = documentSnapshot.getString("time");
-                        PlaceChosen = documentSnapshot.getString("location");
-                        Query query = collectionReference.whereEqualTo("time", TimeChosen)
-                                .whereEqualTo("location", PlaceChosen);
-                        query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                            @Override
-                            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                                if (task.isSuccessful()) {
-                                    List<String> usersList = new ArrayList<>();
-                                    for (QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()) {
-                                        String id = queryDocumentSnapshot.getId();
-                                        usersList.add(id);
-                                    }
-                                    for (String user : usersList) {
-                                        if (userID.equals(user)){
-                                            usersList.remove(user);
+        while (loop == Boolean.TRUE){
+            System.out.println("Hello There");
+            documentReference.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                    if (task.isSuccessful()) {
+                        final DocumentSnapshot documentSnapshot = task.getResult();
+                        if (documentSnapshot != null) {
+                            TimeChosen = documentSnapshot.getString("time");
+                            PlaceChosen = documentSnapshot.getString("location");
+                            Log.d("Time Chosen", TimeChosen);
+                            Query query = collectionReference.whereEqualTo("time", TimeChosen)
+                                    .whereEqualTo("location", PlaceChosen);
+                            query.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                                @Override
+                                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                                    if (task.isSuccessful()) {
+                                        List<String> usersList = new ArrayList<>();
+                                        for (QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()) {
+                                            String id = queryDocumentSnapshot.getId();
+                                            usersList.add(id);
                                         }
-                                    }
-                                    Random rand = new Random();
-                                    int index = rand.nextInt(usersList.size());
-                                    userID2 = usersList.get(index);
-                                    System.out.println(userID2);
+                                        for (String user : usersList) {
+                                            if (userID.equals(user)) {
+                                                usersList.remove(user);
+                                            }
+                                        }
+                                        System.out.println("Here is the Matched User ID: " + userID2);
+                                        if (usersList.size() > 0) {
+                                            Random rand = new Random();
+                                            int index = rand.nextInt(usersList.size());
+                                            userID2 = usersList.get(index);
+                                            System.out.println("Here is the Matched User ID:" + userID2);
 
-                                    Intent intent = new Intent(findingBuddy.this, matchFound.class);
-                                    intent.putExtra("MatchedUser", userID2);
-                                    startActivity(intent);
+                                            Intent intent = new Intent(findingBuddy.this, matchFound.class);
+                                            intent.putExtra("MatchedUser", userID2);
+                                            startActivity(intent);
+                                        }
+                                        sleep(3000);
+                                    } else {
+                                        Log.d("ERROR", "Cannot access to the database!");
+                                    }
                                 }
-                                else {
-                                    Log.d("ERROR", "Cannot access to the database!");
-                                }
-                            }
-                        });
-                    }
-                    else {
-                        Log.d("ERROR", "Cannot access to the database!");
+                            });
+                        } else {
+                            Log.d("ERROR", "Cannot access to the database!");
+                        }
                     }
                 }
-            }
-        });
+            });
+    }
         //while (loop == Boolean.TRUE) {
             //sleep(10000);
 
