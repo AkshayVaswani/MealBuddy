@@ -19,7 +19,7 @@
         <activity android:name=".afterEvent.reporting.didntShow" />
         <activity android:name=".afterEvent.reporting.mainReportPage" />
         <activity android:name=".afterEvent.reviewBuddy.badMeal" />
-        <activity android:name=".afterEvent.reviewBuddy.alrightMeal" />
+        <activity android:name=".afterEvent.reviewBuddy.alrightMeal" android:exported="true"/>
         <activity android:name=".afterEvent.reviewBuddy.veryGoodMeal" />
         <activity android:name=".afterEvent.overallReviewPage" />
         <activity android:name=".duringEvent.finalDescription" />
