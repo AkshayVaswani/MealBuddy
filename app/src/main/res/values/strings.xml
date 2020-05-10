@@ -83,4 +83,19 @@
     <string name="veryGoodMain">Nice!</string>
     <string name="veryGood2">We\’re glad to have been able to help you meet a cool person.</string>
 
+    <string name="alrightMealMain">That\'s fair</string>
+    <string name="alrightMeal2">Matching with the same person over and over can get awkward!</string>
+    <string name="alrightMeal3">Choose how many weeks should go by before you can match with your buddy again:</string>
+    <string-array name="weeksArray">
+        <item>One Week</item>
+        <item>Two Weeks</item>
+        <item>Three Weeks</item>
+        <item>Four Weeks</item>
+    </string-array>
+
+    <string name="badMealMain">Got it.</string>
+    <string name="badMeal2">Matching preferences updated</string>
+    <string name="badMeal3">You may not have made a new friend, but at least you took a chance and didn\'t end up eating alone.</string>
+    <string name="badMeal4">We hope your next meal goes better!</string>
+
 </resources>
