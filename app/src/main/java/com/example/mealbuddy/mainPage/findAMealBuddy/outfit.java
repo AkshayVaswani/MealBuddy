@@ -49,19 +49,14 @@ public class outfit extends AppCompatActivity {
             public void onClick(View v) {
                 String out_fit = outfit.getText().toString().trim();
                 userID = Objects.requireNonNull(fAuth.getCurrentUser()).getUid();
-                DocumentReference documentReference = fStore.collection("users").document(userID);
                 Map<String, Object> user = new HashMap<>();
                 user.put("outfit", out_fit);
                 user.put("time", time);
                 user.put("location", location);
                 user.put("userID", userID);
 
-                documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d("TAG", "Added to database" + userID);
-                    }
-                });
+                fStore.collection("users").document(userID).update(user);
+
                 startActivity(new Intent(getApplicationContext(), requestSubmit.class));
             }
         });
