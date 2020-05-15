@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.mealbuddy.R;
+import com.example.mealbuddy.duringEvent.matching.matchFound;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -73,7 +74,12 @@ public class requestSubmit extends AppCompatActivity {
         ButtSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Temp code, change to findingBuddy later!!!!!
                 startActivity(new Intent(getApplicationContext(), findingBuddy.class));
+                DocumentReference usermatching = fStore.collection("users").document(userID);
+
+                usermatching
+                        .update("matching", "1");
             }
         });
     }

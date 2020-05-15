@@ -41,6 +41,7 @@
         android:layout_alignParentTop="true"
         android:background="@color/gray"
         app:layout_constraintBottom_toBottomOf="@+id/timeMain"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoBack"
         app:layout_constraintVertical_bias="0.0" />

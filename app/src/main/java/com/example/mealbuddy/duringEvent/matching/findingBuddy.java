@@ -60,7 +60,7 @@ public class findingBuddy extends AppCompatActivity {
                             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                                 if (task.isSuccessful()) {
                                     List<String> usersList = new ArrayList<>();
-                                    for (QueryDocumentSnapshot queryDocumentSnapshot : task.getResult()) {
+                                    for (QueryDocumentSnapshot queryDocumentSnapshot : Objects.requireNonNull(task.getResult())) {
                                         String id = queryDocumentSnapshot.getId();
                                         usersList.add(id);
                                     }
