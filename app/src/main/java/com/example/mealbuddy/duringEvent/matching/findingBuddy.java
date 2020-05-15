@@ -25,6 +25,8 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Random;
 
+import static android.os.SystemClock.sleep;
+
 public class findingBuddy extends AppCompatActivity {
     FirebaseFirestore fStore;
     FirebaseAuth fAuth;
@@ -62,19 +64,25 @@ public class findingBuddy extends AppCompatActivity {
                                         String id = queryDocumentSnapshot.getId();
                                         usersList.add(id);
                                     }
+                                    Log.d("TAG123", "onComplete: " + usersList);
                                     for (String user : usersList) {
+                                        Log.d("TAG123", "onComplete: " + user);
                                         if (userID.equals(user)){
                                             usersList.remove(user);
                                         }
                                     }
-                                    Random rand = new Random();
-                                    int index = rand.nextInt(usersList.size());
-                                    userID2 = usersList.get(index);
-                                    System.out.println(userID2);
+                                    System.out.println("Here is the Matched User ID: " + userID2);
+                                    if (usersList.size() > 0) {
+                                        Random rand = new Random();
+                                        int index = rand.nextInt(usersList.size());
+                                        userID2 = usersList.get(index);
+                                        System.out.println("Here is the Matched User ID:" + userID2);
 
-                                    Intent intent = new Intent(findingBuddy.this, matchFound.class);
-                                    intent.putExtra("MatchedUser", userID2);
-                                    startActivity(intent);
+                                        Intent intent = new Intent(findingBuddy.this, matchFound.class);
+                                        intent.putExtra("MatchedUser", userID2);
+                                        startActivity(intent);
+                                    }
+                                    sleep(3000);
                                 }
                                 else {
                                     Log.d("ERROR", "Cannot access to the database!");
